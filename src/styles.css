@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #777;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 360px;
+  background-color: var(--background-color);
+  transition: background-color 1.2s linear;
+  margin-top: 4rem;
+  padding: 0.6rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgb(0, 0, 0, 0.8);
+  border: 1px solid #000;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-VoApMlTHkTAXBa_S1PLQtUTWpdVe_iW2AlJJc8YKHp9VDxmMFj7x3aUa57LqSuDhko&usqp=CAU"); */
+}
+
+.screen {
+  height: 4rem;
+  margin: 4rem 0;
+  text-align: right;
+  color: var(--text-color);
+  transition: color 2s linear;
+}
+
+.btn-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.btn {
+  background: var(--button-background-color);
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 28px;
+  color: var(--button-text-color);
+  font-weight: 500;
+  transition: color 2s linear, background 2s linear;
+}
+
+.btn:hover {
+  transition: 0.4s all ease;
+  box-shadow: var(--box-shadow);
+}
+
+.equals {
+  grid-column: 3/5;
+  color: var(--equals-text-color);
+  background-color: var(--equals-background-color);
+}
+
+.opt {
+  background-color: var(--opt-background-color);
+  color: var(--opt-text-color);
+}
+
+.del {
+  background-color: var(--del-background-color);
+  color: var(--del-text-color);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0 3rem;
+}
+
+.top h1 {
+  font-size: 22px;
+  line-height: 38px;
+  padding: 0.4rem 0.8rem;
+  color: var(--title-text-color);
+  border: var(--title-border);
+  border-radius: 20px;
+  background-color: var(--title-background-color);
+  transition: color 2s linear, background-color 2s linear, border 1.8s linear;
+}
+
+.top .moon {
+  width: 26px;
+  height: 26px;
+  color: #242424;
+  margin-left: 0.2rem;
+  cursor: pointer;
+}
+
+.top .sun {
+  margin-right: 0.2rem;
+  width: 26px;
+  height: 26px;
+  color: #f7f8f9;
+  cursor: pointer;
+}
